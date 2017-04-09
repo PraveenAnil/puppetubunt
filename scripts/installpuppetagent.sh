@@ -6,3 +6,4 @@ wget http://pm.puppetlabs.com/puppet-agent/2016.1.2/1.4.2/repos/deb/wily/PC1/pup
 dpkg -i puppet-agent_1.4.2*
 apt-get install puppet -y
 puppet resource service puppet ensure=running enable=true
+puppet agent --enable
